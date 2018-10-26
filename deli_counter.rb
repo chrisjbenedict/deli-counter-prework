@@ -1,5 +1,5 @@
 # Write your code here.
-katz_deli = ["Tim", "John", "Ada"]
+katz_deli = []
 
 def line(katz_deli)
   if katz_deli.size == 0
@@ -28,5 +28,3 @@ def now_serving(katz_deli)
     puts "Currently serving #{katz_deli.shift()}."
   end
 end
-
-puts line(katz_deli)
