@@ -4,16 +4,17 @@ katz_deli = []
 def line(arr)
   if arr.size == 0
     puts "The line is currently empty."
+  elsif arr.size > 0
+    line_number = 1
+    current_line = []
+    intro = "The line is currently: "
+    for person in arr
+      current_line.push("#{line_number}. #{person}")
+      line_number += 1
+    end
+    puts intro + current_line.join(' ')
   end
-  current_line = []
-  line_number = 1
-  for person in arr
-    current_line.push("#{line_number}. #{person}")
-    line_number += 1
-  end
-  return "The line is currently: #{current_line.join(' ')}"
 end
-
 
 def take_a_number(katz_deli, name)
   katz_deli.push(name)
