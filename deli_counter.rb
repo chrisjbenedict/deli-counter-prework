@@ -7,9 +7,10 @@ def line(arr)
   end
   line_number = 1
   current_line = []
+  intro = "The line is currently: "
   for person in arr
-    current_line.push("The line is currently: #{line_number}. #{person}")
+    current_line.push("#{line_number}. #{person}")
     line_number += 1
   end
-  puts current_line.join(' ')
+  puts intro + current_line.join(' ')
 end
