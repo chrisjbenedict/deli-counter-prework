@@ -15,3 +15,7 @@ def line(arr)
     puts intro + current_line.join(' ')
   end
 end
+
+def take_a_number(katz_deli, name)
+  puts "#{katz_deli[name]}. #{name}"
+end
