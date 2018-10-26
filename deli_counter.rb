@@ -12,8 +12,8 @@ def line(katz_deli)
       current_line.push("#{line_number}. #{person}")
       line_number += 1
     end
-    puts intro + current_line.join(' ')
   end
+  puts intro + current_line.join(' ')
 end
 
 def take_a_number(katz_deli, name)
