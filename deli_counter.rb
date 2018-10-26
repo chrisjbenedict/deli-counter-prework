@@ -11,7 +11,7 @@ def line(arr)
     current_line.push("#{line_number}. #{person}")
     line_number += 1
   end
-  return "The line is currently:" + current_line.join(' ')
+  return "The line is currently: #{current_line.join(' ')}"
 end
 
 
