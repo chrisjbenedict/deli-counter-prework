@@ -8,7 +8,7 @@ def line(arr)
   current_line = []
   line_number = 1
   arr.each do |person|
-    current_line.push("#{line_number}. #{person}")
+    current_line.push("The line is currently: #{line_number}. #{person}")
     line_number += 1
   end
   return current_line
